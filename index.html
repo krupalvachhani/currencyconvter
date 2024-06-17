@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/17123d4838.js" crossorigin="anonymous"></script>
+    <title>Currency converter</title>
+</head>
+<body>
+    <form action="" class="content">
+        <h2 class="heading">Currency Converter</h2>
+        <label for="amount">Enter Amount</label>
+        <input type="text" placeholder="100" class="input" name="amount">
+        <div id="converter">
+            <div class="from">
+                <p>From</p>
+                <div class="select-container">
+                    <img src="https://flagsapi.com/US/flat/32.png">
+                    <select name="from"></select>
+                </div>
+            </div>
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <div class="to">
+                <p>To</p>
+                <div class="select-container">
+                    <img src="https://flagsapi.com/IN/flat/32.png">
+                    <select name="to"></select>
+                </div>
+            </div>
+        </div>
+        <p class="info">1 USD = 80 INR</p>
+        <button type="submit" class="submit">Convert</button>
+    </form>
+    <script src="countrycode.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
